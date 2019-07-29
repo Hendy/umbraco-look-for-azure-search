@@ -237,7 +237,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Events\UmbracoStartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\LookService.cs" />
+    <Compile Include="Services\LookService_Initialize.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
