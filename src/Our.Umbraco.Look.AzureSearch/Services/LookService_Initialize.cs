@@ -20,6 +20,10 @@ namespace Our.Umbraco.Look.AzureSearch.Services
                         LogHelper.Info(typeof(LookService), "Initializing...");
 
                         LookService.Instance._umbracoHelper = umbracoHelper;
+
+                        // make/test connection to azure search (should handle be kept ?)
+
+
                     }
                 }
             }
