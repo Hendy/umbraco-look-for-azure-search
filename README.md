@@ -5,6 +5,10 @@ Indexing and Querying API of Umbraco data in Azure Search
 
 2) Create config API for user to specify custom schema to create (only operational in debug mode - as a safety check)
 
+
+
+
+
 	user should be able to :	specify tag groups
 
 	// following not needed, as collections can be faked using a PVC on the IPublishedContent item to return a child collection of IPublishedContent (so each are indexed as an item themselves)

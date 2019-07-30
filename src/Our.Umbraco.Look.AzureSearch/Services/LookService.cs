@@ -1,8 +1,13 @@
-﻿using System;
+﻿using Our.Umbraco.Look.AzureSearch.Models;
+using System;
+using System.Collections.Generic;
 using Umbraco.Web;
 
 namespace Our.Umbraco.Look.AzureSearch.Services
 {
+    /// <summary>
+    /// Singleton class
+    /// </summary>
     internal partial class LookService
     {
         /// <summary>
@@ -19,6 +24,11 @@ namespace Our.Umbraco.Look.AzureSearch.Services
         /// Supplied by the initialization event (for re-use by the LookMatch)
         /// </summary>
         private UmbracoHelper _umbracoHelper;
+
+        /// <summary>
+        /// Collection of index configuration models, keyed by the azure search index name
+        /// </summary>
+        private Dictionary<string, IndexConfiguration> _indexConfigurations = new Dictionary<string, IndexConfiguration>();
 
         /// <summary>
         /// Access the singleton instance of this search service
